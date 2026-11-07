@@ -1,0 +1,11 @@
+# 实际测试的版本（Windows 11 本地 venv 验证通过）
+pyspark==3.5.7
+setuptools==84.2.1  # Python 3.12 无 distutils，pyspark.ml 需要其兼容层
+streamlit==1.66.1
+plotly==7.1.0
+pandas==3.1.0
+pyarrow==26.0.0
+pytest==9.1.1
+requests==2.34.2
+# 注：VM 上运行 pipeline 不需要 pandas/streamlit——spark-submit 自带 PySpark，
+# 导出用纯 Python csv 模块；看板在 Windows 本机运行。

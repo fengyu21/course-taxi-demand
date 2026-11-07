@@ -1,0 +1,12 @@
+[theme]
+# 强制浅色主题：与报告风格一致，避免深色模式下浅底卡片上的文字看不清
+base = "light"
+primaryColor = "#F5B301"
+
+[client]
+# 隐藏右上角 Deploy 按钮与应用菜单（Streamlit 自带的云端发布入口，与本项目无关）
+toolbarMode = "minimal"
+
+[server]
+# 上传模式限制在几十 MB，超过后前端会提示裁剪
+maxUploadSize = 60

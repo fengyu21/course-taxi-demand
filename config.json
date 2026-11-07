@@ -1,0 +1,24 @@
+{
+  "project": "基于 Hadoop 与 Spark 的出租车区域小时需求预测与可视化系统",
+  "data": {
+    "yellow_file": "yellow_tripdata_2024-01.parquet",
+    "zone_file": "taxi_zone_lookup.csv",
+    "local_raw_dir": "data/raw",
+    "hdfs_input_dir": "/user/bigdata/course_taxi/input",
+    "provenance": "data/provenance.json"
+  },
+  "output_dir": "outputs",
+  "time": {
+    "data_start": "2024-01-01 00:00:00",
+    "data_end": "2024-02-01 00:00:00",
+    "warmup_end": "2024-01-08 00:00:00",
+    "train_end": "2024-01-22 00:00:00",
+    "val_end": "2024-01-25 00:00:00"
+  },
+  "top_n_zones": 10,
+  "rf": {
+    "num_trees": 30,
+    "max_depth": 5,
+    "seed": 42
+  }
+}

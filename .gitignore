@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+data/raw/
+outputs/
+outputs_vm/
+docs/
+tools/
+*.log
+*.html
+屏幕截图*.png
+*.pptx.ruff_cache/
+.ruff_cache/
+*.pptx
+scripts/make_ppt.py
